@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.no_color_sticky{
+    transition: top ease 0.5s;
+    top: 0;
+}
+.header-sec{
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    background: transparent;
+}
+.container{
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    flex: 0.2;
+}
+a{
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.logo img{
+    width: 123px;
+    cursor: pointer;
+}
+img{
+    vertical-align: middle;
+    border: 0;
+}
+.menu{
+flex: 0.7;
+gap: 20px;
+justify-content: space-evenly;
+display: flex;
+align-items: center;
+}
+.menu a.active{
+    font-weight: 600;
+}
+.menu a{
+    color: black;
+    font-size: 14px;
+    line-height: 23px;
+    text-decoration: none;
+    position: relative;
+}
+.menu a.active::after{
+    background-position: 100% 0;
+}
+.menu a ::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background: linear-gradient(to left,black 50%,transparent 50%);
+    background-size: 200% 100%;
+    transition: all 0.2s ease-out;
+    border-radius: 4px;
+}
+.btn, .menu .btn{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 158px;
+    cursor: pointer;
+}
+.btn_black{
+    background: black;
+    border-radius: 30px 30px 5px 30px;
+}
+element{
+    padding-top: 187.333px;
+}
+.home_sec{
+    position: relative;
+    overflow: hidden;
+    transition: 0.8s ease 0s;
+}
+.home{
+    display: flex;
+}
+.home_sec .active
+.home_text_wrapper{
+opacity: 1;
+transition: 1.5s ease 0.1s;
+}
+.home div{
+    flex: 0.6;
+}
+.home_text_wrapper{
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+.home_text_wrapper h1 {
+    font-weight: 300;
+    line-height: 60px;
+    font-size: 50px;
+    margin: 0;
+
+}
+.home_text_wrapper h2 {
+    color: #4B4B4B;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    width: 54%;
+    margin: 20px 0 0 0;
+  }
+  .btn_sec{
+    display: flex;
+    margin-top: 40px;
+  }
+  .btn_sec .btn .yellow-btn{
+    margin-right: 20px;
+  }
+  .btn_sec .btn{
+    width: 210px;
+    height: 50px;
+  }
+  .yellow-btn{
+    background:#f9c935;
+    color: black;
+    border-radius: 30px 30px 30px 5px;
+  }
+  .black-btn{
+    background:hsl(43, 90%, 4%);
+    color:white;
+    border-radius: 30px 30px 5px 30px;
+}
+.home_img{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    right: 0px;
+    height: 100%;
+}
+.home_img .home_img_hid{
+    background-color:#f9c935;
+    content: '';
+    width: 1744px;
+    height: 683px;
+    z-index: -1;
+    position: relative;
+    border-radius: 507.5px;
+    top: 0%;
+    right: 0%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home_sec.active .home_img .home_img_hid {
+    transform: rotate(130deg) translateX(-10%) translateY(66%);
+    transition: 0.8s ease 0s;
+  }
+  .home_img img {
+    width: 60%;
+    transform: rotate(-130deg);
+    position: relative;
+    top: -10%;
+    left: 15%;
+  }
